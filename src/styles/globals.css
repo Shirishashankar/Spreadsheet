@@ -1,0 +1,84 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply font-sans bg-gray-100;
+}
+
+/* Header Styling */
+.header {
+  @apply flex items-center p-4 bg-green-900 text-white shadow-md;
+}
+
+.header img {
+  @apply h-8 w-8 mr-2;
+}
+
+.header h1 {
+  @apply text-xl font-semibold;
+}
+
+/* Toolbar Styling */
+.toolbar {
+  @apply flex items-center bg-gray-200 p-2 shadow-md;
+}
+
+.toolbar button {
+  @apply px-4 py-2 bg-white border rounded-md shadow-sm hover:bg-gray-100 transition-colors duration-200;
+}
+
+.toolbar button span {
+  @apply ml-1 text-sm;
+}
+
+/* Grid Container Styling */
+.grid-container {
+  @apply grid grid-cols-20 gap-0.5;
+}
+
+/* Style for the cell container */
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Style for the cell input */
+.cell-input {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  font-size: 0.875rem; /* equivalent to text-sm */
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Style when the cell input is focused */
+.cell-input:focus {
+  border-color: #48bb78; /* Equivalent to green-500 */
+}
+
+
+/* Search Bar Styling */
+.search-bar-container {
+  @apply flex items-center space-x-2;
+}
+
+.search-bar-input {
+  @apply border p-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-green-500;
+  width: 1500px;
+}
+
+.search-bar-button {
+  @apply bg-green-900 text-black p-2 rounded-md text-sm font-semibold hover:bg-green-900 transition duration-300;
+}
+
+.font-bold {
+  font-weight: bold; /* Ensures bold styling is applied */
+}
